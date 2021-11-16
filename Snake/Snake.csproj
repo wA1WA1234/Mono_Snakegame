@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PublishTrimmed>true</PublishTrimmed>
+        <LangVersion>6</LangVersion>
+        <Company>Romans I XVI Gaming</Company>
+        <ApplicationIcon>Icon.ico</ApplicationIcon>
+        <SignAssembly>true</SignAssembly>
+        <DelaySign>false</DelaySign>
+        <AssemblyOriginatorKeyFile>Snake.snk</AssemblyOriginatorKeyFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <TrimmerRootAssembly Include="mscorlib" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <MonoGameContentReference Include="**\*.mgcb" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
+        <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.7" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Icon.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_1.json">
+        <Link>Content/json/level_1.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_2.json">
+        <Link>Content/json/level_2.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_3.json">
+        <Link>Content/json/level_3.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_4.json">
+        <Link>Content/json/level_4.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_5.json">
+        <Link>Content/json/level_5.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_6.json">
+        <Link>Content/json/level_6.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_7.json">
+        <Link>Content/json/level_7.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_8.json">
+        <Link>Content/json/level_8.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_9.json">
+        <Link>Content/json/level_9.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_10.json">
+        <Link>Content/json/level_10.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_11.json">
+        <Link>Content/json/level_11.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="..\SnakeContent\json\level_12.json">
+        <Link>Content/json/level_12.json</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <Import Project="..\monoEngine\MonoEngine\MonoEngine.projitems" Label="Shared" />
+    <Import Project="..\SnakeShared\SnakeShared\SnakeShared.projitems" Label="Shared" />
+
+</Project>

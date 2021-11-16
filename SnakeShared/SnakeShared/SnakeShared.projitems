@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>23d7538d-5b16-4996-b403-39e690723e54</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SnakeShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ClassicLevelData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\AvailableContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\ContentHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\SnakeGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\SaveDataHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Ads.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Background.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlBack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlFoodSpawner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlFullscreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlLevelConstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlPause.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Controls\ControlPortalAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Food.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\LoadingSplash.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Portal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Scoreboard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Snake.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SnakePortalAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\StatTracker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\TimedExecution.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonClassic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\Button.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonFast.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonLevel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonLevels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonMedium.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonOpen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonSlow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\ButtonTheme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\DeveloperLogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\LevelRequirementsLogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\LevelSelectUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\MainMenuUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\Selector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\TitleLogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UI\WallDecoration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Upgrade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Wall.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\GameplaySpeeds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\GameRooms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Sides.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\BoolExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\RandomExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\RectangleExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SpriteBatchExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SpriteExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SpriteFontExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameEvents\FoodEatenEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameEvents\SnakeDestructionDoneEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameEvents\SnakeDiedEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameEvents\SnakeMoveEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameEvents\SnakePartDestroyedEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IFastForwardable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LevelData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Levels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LogoDrawData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomLevels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomMain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rooms\RoomPlay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SFXPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VirtualInputButtons.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XboxLive\XboxLiveConnectedStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XboxLive\XboxLiveIndicator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XboxLive\XboxLiveObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XboxLive\XboxLiveStats.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XboxLive\XboxLiveStatsManager.cs" />
+  </ItemGroup>
+</Project>
